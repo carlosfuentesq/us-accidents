@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accidentes</title>
+    
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div class="container">
+        <br>
+        <div class="title">
+            <br>
+            <h1 class="jumbotron-heading text-center">Accidentes en Estados Unidos</h1>
+            <br>
+        </div>
+        <br>
+        <div id="content" class="content">
+            <form action="consulta1.php" method="get" class="consulta text-center">
+                <fieldset>
+                    <legend>Escriba el nombre de una ciudad perteneciente al estado de New York, para ver la cantidad de accidentes totales agrupados por los nombres de las calles</legend>
+                    <!-- Text input-->
+                    <div>
+                        <label>
+                            <input name="input1" placeholder="Amsterdam" class="text-center">
+                        </label>
+                    </div>
+
+                    <!-- Button -->
+                    <div>
+                        <input type="submit" value="Consultar">
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+        <br>
+        <div id="content" class="content">
+            <form action="consulta2.php" method="get" class="consulta text-center">
+                <fieldset>
+                    <legend>Ingrese un mes (MM) y un dia (DD) para ver los accidentes totales de esa fecha por anos </legend>
+                    <!-- Text input-->
+                    <div>
+                        <label>
+                            Mes: <input name="input1" placeholder="MM">
+			    Dia: <input name="input2" placeholder="DD">
+                        </label>
+                    </div>
+
+                    <!-- Button -->
+                    <div>
+                        <input type="submit" value="Consultar">
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+        <br>
+        <div id="content" class="content">
+            <form action="consulta3.php" method="get" class="consulta text-center">
+                <fieldset>
+		    <legend>Seleccione un objeto cercano para ver los accidentes que ocurrieron cerca de este elemento</legend>
+		    <div>
+			<select name='input1'>
+				<option value=0 selected>Seleccione</option>
+				<option value=26>Junction</option>
+				<option value=27>Traffic Signal</option>
+				<option value=28>Amenity</option>
+				<option value=29>Crossing</option>
+				<option value=30>Railway</option>
+				<option value=31>Station</option>
+				<option value=32>Stop</option>
+				<option value=33>Give Way</option>
+				<option value=34>No Exit</option>
+				<option value=35>Bump</option>
+				<option value=36>Traffic Calming</option>
+				<option value=37>Roundabout</option>
+			</select>
+
+                        <input type="submit" value="Consultar">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

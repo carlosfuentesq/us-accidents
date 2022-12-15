@@ -1,0 +1,63 @@
+
+body {
+  background-color: #000000;
+  background: url(https://st1.uvnimg.com/dims4/default/d164d4d/2147483647/resize/1093x820%3E/quality/75/?url=http%3A%2F%2Fuvn-brightspot.s3.amazonaws.com%2F90%2Fe7%2F78ae9dfa46b39d207701a26f5135%2Fciudades-peligrosas-para-conducir-100918-c.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px);
+}
+
+table, th, td{
+	margin: 0 auto;
+	border: 1px solid black;
+	border-collapse: collapse;
+	border-color: #222222;
+	text-align: center;
+	padding: 15px;}
+	tr:nth-child(1){
+		background-color: rgb(0,0,0)
+	}
+
+	th{
+		font-weight:bold;
+		color: #ffffff;
+	}
+	
+	td{
+		background-color: rgba(173, 182, 180, 0.8)
+}
+
+.caption{
+	background-color: rgb(0,0,0);
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	font-size: 25px;	
+}
+
+.title {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.content{
+  background: rgba(197, 183, 183, 0.8);
+  border: 2px solid #000000;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.consulta {
+  margin: 20px;
+}
+
+.btn{
+	background-color: rgb(0,0,0);
+	border-radius: 10px;
+	color: white;
+	padding: 15px 25px;
+	text-decoration: none;
+}
+
